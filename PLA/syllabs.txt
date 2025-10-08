@@ -1,0 +1,67 @@
+List of Algorithms
+
+String Processing Algorithms
+
+1. Manacher's Algorithm   done
+This algorithm finds the longest palindromic substring in linear time. It preprocesses the string by inserting special characters between each character to handle both odd and even length palindromes uniformly. The algorithm uses the concept of "center expansion" and maintains information about previously computed palindromes to avoid redundant calculations.
+
+2. Binary Palindrome Check   done
+A simple algorithm that converts a number to its binary representation and checks if the binary string reads the same forwards and backwards. It uses two pointers approach - one from the start and one from the end, comparing characters until they meet.
+
+3. Strobogrammatic Number    done
+This algorithm checks if a number looks the same when rotated 180 degrees. Only digits 0, 1, 6, 8, 9 can form strobogrammatic numbers. The algorithm uses two pointers to verify that each digit pair forms a valid rotation (0↔0, 1↔1, 6↔9, 8↔8, 9↔6).
+
+Backtracking Algorithms
+4. Rat in a Maze     done
+A classic backtracking algorithm that finds all possible paths from the top-left corner to the bottom-right corner of a maze. The rat can only move right or down through cells marked as 1 (open paths). When it reaches a dead end, it backtracks and tries a different route.
+
+5. N-Queens Problem  TODO
+This algorithm places N queens on an N×N chessboard such that no two queens attack each other. It uses backtracking to try placing queens row by row, checking for conflicts in columns, diagonals, and anti-diagonals. When a conflict is found, it backtracks and tries the next position.
+
+Combinatorial Algorithms
+6. Combinations Calculator   done
+Calculates the number of ways to choose r items from n items using the mathematical formula nCr = n!/(r! × (n-r)!). The implementation uses a recursive factorial function.
+
+7. Permutations Generator     done
+Generates all possible arrangements of characters in a string using recursion and backtracking. It swaps characters to create different arrangements and then swaps them back to restore the original state for other possibilities.
+
+Sorting Algorithms
+8. Quick Sort    TODO
+A divide-and-conquer sorting algorithm that selects a pivot element and partitions the array around it. Elements smaller than the pivot go to the left, and larger elements go to the right. The process is recursively applied to both partitions.
+
+9. Selection Sort    TODO
+A simple sorting algorithm that repeatedly finds the minimum element from the unsorted portion and places it at the beginning. It maintains two subarrays: sorted and unsorted, gradually expanding the sorted portion.
+
+Array Manipulation Algorithms
+10. Array Rotation     done
+Two approaches to rotate an array by k positions :
+
+Reversal Method: Reverse the first k elements, then reverse the remaining elements, finally reverse the entire array
+
+One-by-one Method: Shift elements one position at a time for k iterations
+
+11. Maximum Product Subarray   done
+Finds the contiguous subarray within an array that has the largest product. Uses a brute force approach to check all possible subarrays and track the maximum product found.
+
+Mathematical Algorithms
+12. Karatsuba Multiplication   
+An efficient algorithm for multiplying large numbers using divide-and-conquer. It reduces the number of single-digit multiplications from 4 to 3 by clever algebraic manipulation, making it faster than traditional multiplication for large numbers.
+
+13. Booth's Algorithm    TODO
+A multiplication algorithm for signed binary numbers using addition and shifting operations. It examines pairs of bits to determine whether to add, subtract, or just shift, making multiplication more efficient in hardware implementations.
+
+14. Nibble Swap    
+Swaps the upper and lower 4 bits (nibbles) of a byte using bitwise operations. Uses bit masking and shifting: extract lower nibble and shift left, extract upper nibble and shift right, then combine with OR operation.
+
+Search and Optimization Algorithms
+15. Weighted Substring     TODO
+An algorithm that constructs a string with a specific weight value. It precomputes weight values for each character position and uses binary search to find the appropriate characters that sum to the target weight.
+
+Logic and Puzzle Algorithms
+16. Doors Problem    done
+Simulates the classic "100 doors" puzzle where doors are toggled by multiple passes. After n passes, only doors whose numbers are perfect squares remain open because perfect squares have an odd number of divisors.
+
+17. Apple Problem    TODO
+Solves a mathematical puzzle involving arranging apples in a specific pattern. Uses a formula involving squares and accumulation to determine the minimum number of groups needed.
+
+All these algorithms demonstrate different problem-solving techniques including recursion, backtracking, divide-and-conquer, dynamic programming concepts, and mathematical computations.
